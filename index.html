@@ -39,17 +39,17 @@
           <h3>Quiz</h3>
             <div id="quiz1">
               <h4>Existen dos tipos de funciones</h4>
-                <input type="radio" value="1" name="p1" >Expresadas y declaradas</input><br/>
-                <input type="radio" value="2" name="p1">Explícitass y declaradas</input><br/>
-                <input type="radio" value="3" name="p1">Expresadas y derivadas</input><br/>
+                <input type="radio" name="p1" >Expresadas y declaradas</input><br/>
+                <input type="radio" name="p1">Explícitass y declaradas</input><br/>
+                <input type="radio" name="p1">Expresadas y derivadas</input><br/>
                 <h4>Elije una propiedad de los arreglos</h4>
-                <input type="radio" value="1" name="p2">clear</input><br/>
-                <input type="radio" value="2" name="p2">loop</input><br/>
-                <input type="radio" value="3" name="p2">add</input><br/>
+                <input type="radio" name="p2">clear</input><br/>
+                <input type="radio" name="p2">loop</input><br/>
+                <input type="radio" name="p2">add</input><br/>
                 <h4>Un objeto tiene ________ y _______</h4>
-                <input type="radio" value="1" name="p3">números y letras</input><br/>
-                <input type="radio" value="2" name="p3">partes y validaciones</input><br/>
-                <input type="radio" value="3" name="p3">propiedades y valores</input><br/><br/>
+                <input type="radio" name="p3">números y letras</input><br/>
+                <input type="radio" name="p3">partes y validaciones</input><br/>
+                <input type="radio" name="p3">propiedades y valores</input><br/><br/>
               <button id="bt1">ENVIAR</button>
             </div>
         </div>
@@ -64,17 +64,17 @@
           <h3>Quiz</h3>
           <div id="quiz2">
             <h4>¿Cuál es el comando para iniciar un repositorio desde la consola</h4>
-            <input type="radio" value="1" name="p4">git init .</input><br/>
-            <input type="radio" value="2" name="p4">git init</input><br/>
-            <input type="radio" value="3" name="p4">git init add</input><br/>
+            <input type="radio" name="p4">git init .</input><br/>
+            <input type="radio" name="p4">git init</input><br/>
+            <input type="radio" name="p4">git init add</input><br/>
             <h4>¿Cuál es la finalidad de hacer una prueba unitaria?</h4>
-            <input type="radio" value="1" name="p5">Comprobar que el código funciona correctamente</input><br/>
-            <input type="radio" value="2" name="p5">Darle valores a los parámetros de dichas funciones</input><br/>
-            <input type="radio" value="3" name="p5">No tiene ningun fin</input><br/>
+            <input type="radio" name="p5">Comprobar que el código funciona correctamente</input><br/>
+            <input type="radio" name="p5">Darle valores a los parámetros de dichas funciones</input><br/>
+            <input type="radio" name="p5">No tiene ningun fin</input><br/>
             <h4>¿Qué significa DOM?</h4>
-            <input type="radio" value="1" name="p6">Dual Objet Model</input><br/>
-            <input type="radio" value="2" name="p6">Document Object Model</input><br/>
-            <input type="radio" value="3" name="p6">Document Obsolet Model</input><br/><br/>
+            <input type="radio" name="p6">Dual Objet Model</input><br/>
+            <input type="radio" name="p6">Document Object Model</input><br/>
+            <input type="radio" name="p6">Document Obsolet Model</input><br/><br/>
             <button id="bt2">ENVIAR</button>
         </div>
         </div>
@@ -83,9 +83,13 @@
           <p>No hay lecciones (Todavía)</p>
         </div>
     </div>
+    
     <script src="js/main.js"></script>
     <script>
       var nom = prompt("¿Cuál es tu nombre?");
+      if(nom==""){
+        var nom = prompt("Ingrese su nombre por favor");
+      }
       document.getElementById("nom").textContent = "Hola coder " + nom;
     </script>
 </body>

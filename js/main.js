@@ -1,3 +1,4 @@
+// Dropdown
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -16,6 +17,7 @@ window.onclick = function(event) {
 	}
 }
 
+// Botones text1, text2, text3
 var mostarOcultar = function(divtexte) {
 	var divtext = document.getElementById(divtexte);
   var text1 = document.getElementById("text1");
@@ -39,6 +41,7 @@ var mostarOcultar = function(divtexte) {
   }
 }
 
+// Quiz Spring 1
 document.getElementById("bt1").onclick = function(){
   var cb = 0;  //cuenta buenas
   var cm= 0; // cuenta malas
@@ -62,6 +65,7 @@ document.getElementById("bt1").onclick = function(){
   }
 }
 
+// Quiz Spring 2
 document.getElementById("bt2").onclick = function(){
   var cb = 0;  //cuenta buenas
   var cm= 0; // cuenta malas
