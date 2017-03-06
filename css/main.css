@@ -103,6 +103,10 @@ input {
   display:block;
 }
 
-#text2{
+#text1{
+	display : none;
+}
+
+#text3{
 	display : none;
 }
