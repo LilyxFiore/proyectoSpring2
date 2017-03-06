@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>El capitán V.0.0.1</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header align="right">
+    <div class="dropdown" id="dropdown">
+          <label id="nom"></label>
+        	<button onclick="myFunction()" class="dropbtn">&#9776;</button>
+        	<div id="myDropdown" class="dropdown-content">
+        		<a href="#">Perfil</a>
+        		<a href="#l">Salir</a>
+          </div>
+
+    </div>
+    </header>
+    <center><img src="img/logo.svg" alt="Laboratoria" width="40%"></center>
+    <div class="contenedor-contenido-pagina">
+      <h2>¿Qué es laboratoria?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec ligula mi. Duis tempor ligula at lacus aliquet, quis sagittis dolor placerat. Quisque varius mollis purus quis sollicitudin. Vestibulum volutpat et lorem vitae gravida. Curabitur odio nisl, efficitur vel elit et, volutpat ornare nisi. Praesent odio nunc, varius vel congue sit amet, facilisis eget massa. Maecenas sit amet posuere orci, eu facilisis nulla. Maecenas eu venenatis est, ut laoreet augue. Suspendisse eu semper ipsum. Pellentesque aliquam felis a urna commodo ultrices. Fusce ipsum tellus, interdum egestas tempus a, venenatis quis enim. </p>
+      <h3>Temas</h3>
+    <input type="button" value="Sprint 1" onclick="mostarOcultar('text1')">
+    <input type="button" value="Sprint 2" onclick="mostarOcultar('text2')">
+    <input type="button" value="Sprint 3" onclick="mostarOcultar('text3')">
+    <br/>
+    <div id="text1"></div>
+    <div id="text2"></div>
+    <div id="text3"></div>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+      var nom = prompt("¿Cuál es tu nombre?");
+      document.getElementById("nom").textContent = "Hola coder " + nom;
+    </script>
+</body>
+</html>
