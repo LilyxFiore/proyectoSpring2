@@ -42,27 +42,46 @@ var mostarOcultar = function(divtexte) {
 document.getElementById("bt1").onclick = function(){
   var cb = 0;  //cuenta buenas
   var cm= 0; // cuenta malas
-  var op1 = document.getElementsByName("p1")[0].checked;
-  var op2 = document.getElementsByName("p2")[2].checked;
-  var op3 = document.getElementsByName("p3")[2].checked;
-
-  op1 ? cb++ : cm++;
-  op2 ? cb++ : cm++;
-  op3 ? cb++ : cm++;
-
- document.getElementById("quiz1").innerHTML ="Tienes " +cb + " correcta(s)";
+  var op1 = document.getElementsByName("p1");
+  var op2 = document.getElementsByName("p2");
+  var op3 = document.getElementsByName("p3");
+  if(op1[0].checked == false && op1[1].checked == false && op1[2].checked == false ){
+    alert ("Responder la pregunta 1")
+  }
+  else if(op2[0].checked == false && op2[1].checked == false && op2[2].checked == false ){
+    alert ("Responder la pregunta 2")
+  }
+  else if(op3[0].checked == false && op3[1].checked == false && op3[2].checked == false ){
+    alert ("Responder la pregunta 3")
+  }
+  else {
+  op1[0].checked ? cb++ : cm++;
+  op2[2].checked ? cb++ : cm++;
+  op3[2].checked ? cb++ : cm++;
+   document.getElementById("quiz1").innerHTML ="Tienes " +cb + " correcta(s)";
+  }
 }
 
 document.getElementById("bt2").onclick = function(){
   var cb = 0;  //cuenta buenas
   var cm= 0; // cuenta malas
-  var op1 = document.getElementsByName("p4")[1].checked;
-  var op2 = document.getElementsByName("p5")[0].checked;
-  var op3 = document.getElementsByName("p6")[1].checked;
+  var op1 = document.getElementsByName("p4");
+  var op2 = document.getElementsByName("p5");
+  var op3 = document.getElementsByName("p6");
 
-  op1 ? cb++ : cm++;
-  op2 ? cb++ : cm++;
-  op3 ? cb++ : cm++;
-
+  if(op1[0].checked == false && op1[1].checked == false && op1[2].checked == false ){
+    alert ("Responder la pregunta 1")
+  }
+  else if(op2[0].checked == false && op2[1].checked == false && op2[2].checked == false ){
+    alert ("Responder la pregunta 2")
+  }
+  else if(op3[0].checked == false && op3[1].checked == false && op3[2].checked == false ){
+    alert ("Responder la pregunta 3")
+  }
+  else {
+  op1[1].checked ? cb++ : cm++;
+  op2[0].checked ? cb++ : cm++;
+  op3[1].checked ? cb++ : cm++;
  document.getElementById("quiz2").innerHTML ="Tienes " +cb + " correcta(s)";
+   }
 }
