@@ -5,8 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Coders - Laboratoria</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="div-coder"></div>
+<div id="coders"></div>
+<button onclick="window.location.href='index.html'" class="boton-volver-inicio">Regresar al inicio</button>
 </body>
+<script>
+
+var coders = [ { nombre : "Meche", apellido : "Zubieta",  promocion : "1era. promoción", estado : "Trabajando" },
+       { nombre : "Arabela", apellido : "Rojas", promocion : "2da. promoción", estado : "Trabajando" },
+       { nombre : "Maria", apellido : "Rosán",  promocion : "2da. promoción", estado : "Trabajando" },
+       { nombre : "Guadalupe", apellido : "Racio",  promocion : "3era. promoción", estado : "Trabajando" },
+       { nombre : "Sara", apellido : "Casa",  promocion : "3era. promoción", estado : "Trabajando" },
+       { nombre : "Daniella", apellido : "Durán",  promocion : "4ta. promoción", estado : "Trabajando" },
+       { nombre : "Michelle", apellido : "Seguil",  promocion : "5ta. promoción", estado : "Trabajando" },
+       { nombre : "Diana", apellido : "Navarro",  promocion : "5ta. promoción", estado : "Trabajando" } ];
+
+var coder ="";
+coders.forEach(function(e){
+  coder +="<div class=div-coder><p>"+e.nombre+"</p><p>"+e.apellido+"</p><p>"+e.promocion+"</p><p>"+e.estado+"</p></div>";
+});
+document.getElementById("coders").innerHTML = coder;
+</script>
 </html>
